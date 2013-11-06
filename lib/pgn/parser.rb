@@ -89,9 +89,9 @@ module PGN
         (
           [O0](-[O0]){1,2}             |    # castling (O-O, O-O-O)
           [a-h][1-8]                   |    # pawn moves (e4, d7)
-          [BKNQR][a-h1-8]?x?[a-h][1-8] |    # major piece moves w/ optional specifier
+          [BKNQR][a-h1-8][a-h1-8]?x?[a-h][1-8] |    # major piece moves w/ optional specifier
                                             # and capture
-                                            # (Bd2, N4c3, Raxc1)
+                                            # (Ng8f6, NgF6, N4c3, Raxc1) Support for RHP PGN
           [a-h][1-8]?x[a-h][1-8]            # pawn captures
         )
         (
